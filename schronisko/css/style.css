@@ -1,0 +1,1156 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 20px;
+
+}
+
+header {
+    position: relative;
+}
+
+
+.arrow {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: dimgrey;
+    bottom: -120px;
+    right: 5%;
+    text-align: center;
+    transition: all 0.4s;
+    z-index: 22222;
+}
+
+.arrow a {
+    color: #fff;
+    line-height: 60px;
+}
+
+.arrow.scrolled {
+    bottom: 50px;
+}
+
+#main-nav {
+    background-color: #fff;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    justify-content: space-around;
+    font-family: 'Amatic SC', cursive;
+    z-index: 10000;
+}
+
+
+#main-nav p {
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+h2 {
+    text-align: center;
+    height: 10vh;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 26px;
+}
+
+
+#logo {
+    flex-basis: 5%;
+    background-image: url(img/logo.jpg);
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: 10vh 10vh;
+    margin-left: 80px;
+}
+
+#main-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 10vh;
+    font-size: 25px;
+    flex-basis: 70%;
+    text-align: center;
+}
+
+#main-nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main-nav ul li {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    flex-basis: 18%;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#main-nav ul li:hover {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    flex-basis: 18%;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: beige;
+}
+
+#main-nav ul > li > ul {
+    display: none;
+
+}
+
+#main-nav ul > li > ul > li {
+    background-color: #fff;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+#main-nav ul > li > ul > li:hover {
+    background-color: beige;
+}
+
+
+#main-nav ul > li:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 20%;
+}
+
+#main-nav ul > li:hover ul > li {
+    height: 10vh;
+    display: block;
+
+}
+
+#main-nav.change {
+    height: 8vh;
+}
+
+#main-nav.change ul {
+    padding-top: -20px;
+    line-height: 8vh;
+}
+
+#main-nav.change > #logo {
+    background-size: 8vh 8vh;
+}
+
+#main-nav.change > h2 {
+    font-size: 22px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#socials {
+    width: 8%;
+    position: absolute;
+    right: 10px;
+    line-height: 10vh;
+}
+
+#main-nav.change > #socials {
+    line-height: 8vh;
+    font-size: 23px;
+}
+
+.fb {
+    display: inline-block;
+}
+
+.fb > a {
+    color: black;
+}
+
+.fb > a:hover {
+    color: #3a5998;
+}
+
+.insta {
+    display: inline-block;
+}
+
+.insta > a {
+    color: black;
+}
+
+.insta > a:hover {
+    color: #3F729B;
+}
+
+.gmail {
+    display: inline-block;
+
+}
+
+.gmail > a {
+    color: black;
+}
+
+.gmail > a:hover {
+    color: #EA4335;
+}
+
+/*
+
+#scroller{
+    height:50px;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    right: 100px;
+    bottom:100px;
+    display: none;
+
+}
+*/
+
+#myMain {
+    height: 80vh;
+    /*        margin-top: -10vh;*/
+    background: url(img/kot3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*    position: sticky;*/
+    background-position: 0px -100px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 42px;
+    color: beige;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    right: 60%;
+    font-family: 'Amatic SC', cursive;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5%;
+}
+
+article {
+    height: 150vh;
+}
+
+#secfir {
+    height: 92vh;
+    background:
+        linear-gradient(rgba(8, 142, 98, 1),
+        rgba(255, 0, 0, 0)),
+        /* bottom, image */
+        url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    z-index: 0;
+}
+
+#secfirnav {
+    height: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+#doadopcji {
+    height: 100%;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+
+}
+
+#adoptowane {
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+p1 {
+    text-align: center;
+}
+
+#maingal {
+    display: flex;
+    flex-wrap: wrap;
+    height: 55vh;
+    margin: 0;
+    padding: 0;
+}
+
+#galfir {
+    display: flex;
+    width: 50%;
+    height: 72vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#galsec {
+    display: flex;
+    width: 50%;
+    height: 72vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+}
+
+
+.adoptcat {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-image: url(img/kot4.jpg);
+    background-size: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.adoptedcat {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-image: url(img/kot4.jpg);
+    background-size: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.slick-list{
+    height: 450px;
+    width:600px;
+}
+.slick-track{
+    height:100%;
+    width: 100%;
+}
+p3 {
+    text-align: center;
+    padding-top: 25%;
+    font-size: 28px;
+    width: 100%;
+    color: white;
+    opacity: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s all linear;
+
+}
+
+/*
+.adoptcat:hover p3 {
+    opacity: 0.5;
+    background-color: black;
+}
+
+.adoptcat:hover {
+    opacity: 0.8;
+    transform: translateY(20deg);
+}
+*/
+
+
+/*
+.seemorecats {
+    margin-top: -10vh;
+    flex-basis: 100%;
+    height: 10vh;
+    background-image: linear-gradient(#c31949, #02d1cf);
+    filter: grayscale(0.5);
+    background-color: #7a1919;
+    text-align: center;
+        line-height: 10vh;
+    font-size: 18px;
+        margin-top: 1.2%;
+    transition: 0.5s all ease-in-out;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.seemorecats:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+*/
+
+h4 {
+    font-size: 42px;
+    margin-top: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+h4::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+h4:hover::after {
+    width: 50%;
+    transition: width .5s;
+}
+
+h4 > .icon-handshake-o,
+h4 > .icon-money,
+h4 > .icon-cubes{
+margin-right: 5%;
+}
+h5 {
+    margin: 30px;
+    margin-top: 30px;
+    font-size: 42px;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: 5px;
+}
+h5::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+h5:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+h5 > .icon-paw{
+    margin-right: 10%;
+}
+h6 {
+    margin: 0;
+    margin-left: -18%;
+    text-align: center;
+    width: 100%;
+    font-size: 52px;
+    font-family: 'Amatic SC', cursive;
+    transition: 0.5s all linear;
+}
+#helpus > h6{
+    margin-left: 0;
+}
+h6:hover{
+    color:black;
+}
+
+h6::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+h6:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+h6 > .icon-magic,
+h6 > .icon-calendar,
+h6 > .icon-map,
+h6 > .icon-users{
+    margin-right: 10%;
+}
+.partoffooter > iframe{
+
+    top:17%;
+    left:5px;
+    position: absolute;
+}
+p2 {
+    text-align: center;
+
+}
+
+.catpaw {
+    position: relative;
+    z-index: 22222;
+    opacity: 0.3;
+    background-position: 0;
+}
+
+.catpaw img {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: 100px;
+    bottom: 100px;
+}
+
+.catpaw .oezu {
+    opacity: 1;
+}
+
+.catpaw:nth-child(2) {
+    bottom: 100px;
+    right: 250px;
+}
+
+.catpaw:nth-child(3) {
+    bottom: 200px;
+}
+
+.catpaw:nth-child(4) {
+    bottom: 300px;
+    right: 250px;
+
+}
+
+.catpaw:nth-child(5) {
+    bottom: 400px;
+}
+
+.catpaw:nth-child(6) {
+    bottom: 500px;
+    right: 250px;
+}
+
+#helpus {
+    height: 150vh;
+    background-image: url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    padding: 0 3%;
+}
+
+#przekaz {}
+
+#wsparcie {}
+
+#pomocmat {
+    position: relative;
+}
+
+#aboutus {
+    height: 92vh;
+    background:
+        linear-gradient(rgba(255, 0, 0, 0),
+        rgba(8, 142, 98, 1)),
+        url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    display: flex;
+    flex-direction: row;
+    padding: 0 1%;
+}
+
+#whatwedo {
+    flex-basis: 35%;
+    height: 92vh;
+    padding: 0 1%;
+
+}
+
+#weandfriends {
+    display: flex;
+    flex-direction: column;
+}
+
+#weandfriends > h5 {
+    bottom: 0;
+    margin-bottom: -100px;
+}
+
+#brief {
+    flex-basis: 100%;
+    margin-left: 50px;
+    height: 40vh;
+    margin-top: 50px;
+    position: relative;
+    flex-direction: column;
+}
+
+
+#brief img {
+    margin-top: 5%;
+/*    border-radius: 50%;*/
+    position: absolute;
+}
+
+#brief img:last-of-type {
+    margin-left: 65vh;
+}
+
+
+.briefi {
+    width: 100;
+    float: left;
+}
+
+#rightt {
+    position: absolute;
+    background-image: url(img/kot3.jpg);
+    width: 250px;
+    background-size: cover;
+    margin-top: 80px;
+    height: 250px;
+    left: 37vh;
+    clip-path: polygon(50% 0, 50% 100%, 100% 50%);
+}
+
+#rightt:hover {
+    clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+    z-index: 10;
+}
+
+#leftt {
+    position: absolute;
+    background-image: url(img/kot4.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    left: 37vh;
+    margin-top: 80px;
+    clip-path: polygon(50% 0, 50% 100%, 0 50%);
+}
+
+#leftt:hover {
+    clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+    z-index: 10;
+}
+
+p#firstGirl {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    margin-right: -35%;
+    padding-left: 25%;
+    width: 200px;
+}
+
+p#secondGirl {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    right: -110vh;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#FGtittle {
+    position: absolute;
+    opacity: 1;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    font-size: 38px;
+    margin-right: -25%;
+    padding-left: 25%;
+}
+
+#SGtittle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    right: -90vh;
+    text-align: center;
+    font-size: 38px;
+    transition: all 0.5s ease-in-out;
+}
+
+#ourfriends {
+    position: relative;   
+}
+
+#ourfriends img {
+    margin-top: -25%;
+    position: absolute;
+    left:25%;
+}
+
+footer {
+    background-image: linear-gradient(#088e62, #000);
+    height: 45vh;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.partoffooter {
+    width: 22.5%;
+    height: 45vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 0 1%;
+    transition: 1s all ease-in-out;
+    flex-direction: column;
+    /*    animation: linearBeast 1s linear infinite;*/
+}
+
+.partoffooter h6 {
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+}
+
+.socialIcons {
+    height: 35px;
+    line-height: 50%;
+    flex-direction: column;
+    font-size: 30px;
+    padding-top: 15px;
+    transition: 1s all ease-in-out;
+}
+
+.socialIcons > a {
+    color: #000;
+    display: inline-block;
+    transition: 1s all ease-in-out;
+
+}
+
+.socialIcons:nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+.socialIcons:nth-child(3):hover {
+    background-color: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.socialIcons:nth-child(4):hover {
+    background-color: red;
+}
+
+.socialIcons:nth-child(5):hover {
+    background-color: #C92228;
+}
+
+.socialIcons:hover a {
+    transform: translateX(300%);
+    color: #fff;
+}
+
+#copy {
+    display: flex;
+    height: 5vh;
+    flex-basis: 100%;
+    background-color: black;
+    color: #fff;
+}
+
+#copy a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#copy a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#copy a {
+    margin-left: 55%;
+}
+
+#copy a:hover {
+    opacity: 0.6;
+    height: 5vh;
+    transition: 0.5s all ease-in-out;
+}
+
+@media all and (max-width:640px) {
+    #main-nav p {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    #main-nav ul.active {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 8vh;
+    }
+
+    #main-nav ul li.active {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    h1 {
+        right: 0;
+        top:50px;
+    }
+
+    #socials {
+        position: absolute;
+        left: 0;
+        width: 12%;
+        top:100px;
+        background-color: #fff;
+        text-align: center;
+        opacity: 0.5;
+    }
+    #secfir{
+        margin-top: -200px;
+        background:
+        linear-gradient(rgba(8, 142, 98, 1),
+        rgba(255, 0, 0, 0)),
+        /* bottom, image */
+        url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4
+    {
+        margin:10px;
+    }
+
+    p1{
+        font-size: 12px;
+    }
+    p2{
+        font-size:14px;
+    }
+    .adoptcat {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-wrap: nowrap;
+    }
+    .adoptcat:last-child{
+        display: none;
+    }
+    #helpus{
+        padding-top: 80px;
+    }
+    #aboutus{
+        display:block;
+        margin-top:60vh;
+    }
+    #pomocmat{
+        background-image: url(img/escheresque/escheresque.png);
+        margin: -3%;
+    }
+    
+    #whatwedo{
+        margin-top: -52px;
+    }
+    
+    footer{
+    }
+    .partoffooter{
+        width: 100%;
+        padding-top:-50px;
+        padding-bottom:-50px;
+        height: 50vh;
+        background-color: #088e62;
+    }
+    #weandfriends{
+        display: none;
+    }
+    .icon-map{
+        width: 100vh;
+    }
+    #copy{
+        margin: 0;
+        height: 10vh;
+        background-image: linear-gradient(#088e62, #000);
+        position: relative;
+
+    }
+    #copy > a{
+        position: absolute;
+        top:30px;
+        width:100%;
+        right:0;
+    }
+}
+
+@media all and (max-width:860px) {
+    .adoptcat {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-wrap: nowrap;
+    }
+    #main-nav p {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    #main-nav ul.active {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 8vh;
+    }
+
+    #main-nav ul li.active {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    h1 {
+        right: 0;
+        top:50px;
+    }
+
+    #socials {
+        position: absolute;
+        left: 0;
+        width: 12%;
+        top:100px;
+        background-color: #fff;
+        text-align: center;
+        opacity: 0.5;
+    }
+    #secfir{
+        margin-top: -200px;
+        background:
+        linear-gradient(rgba(8, 142, 98, 1),
+        rgba(255, 0, 0, 0)),
+        /* bottom, image */
+        url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4
+    {
+        margin:10px;
+    }
+
+    p1{
+        font-size: 12px;
+    }
+    p2{
+        font-size:14px;
+    }
+    .adoptcat {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-wrap: nowrap;
+    }
+    .adoptcat:last-child{
+        display: none;
+    }
+    #helpus{
+        padding-top: 80px;
+    }
+    #aboutus{
+        display:block;
+/*        margin-top:60vh;*/
+    }
+    #pomocmat{
+        background-image: url(img/escheresque/escheresque.png);
+        margin: -3%;
+        margin-bottom: -100px;
+    }
+    .icon-map{
+        width: 100vh;
+        margin: 0;
+    }
+    
+    #whatwedo{
+        margin-top: -250px;
+    }
+    
+    footer{
+    }
+    .partoffooter{
+        width: 100%;
+        padding-top:-50px;
+        padding-bottom:-50px;
+        height: 50vh;
+        background-color: #088e62;
+    }
+    #weandfriends{
+        display: none;
+    }
+    #copy{
+        margin: 0;
+        height: 20vh;
+            background-image: linear-gradient(#088e62, #000);
+
+    }
+}
+
+@media all and (max-width:860px) {
+    .adoptcat {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-wrap: nowrap;
+    }
+    #main-nav p {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    #main-nav ul.active {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 8vh;
+    }
+
+    #main-nav ul li.active {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    h1 {
+        right: 0;
+        top:50px;
+    }
+
+    #socials {
+        position: absolute;
+        left: 0;
+        width: 12%;
+        top:100px;
+        background-color: #fff;
+        text-align: center;
+        opacity: 0.5;
+    }
+    #secfir{
+        margin-top: -200px;
+        background:
+        linear-gradient(rgba(8, 142, 98, 1),
+        rgba(255, 0, 0, 0)),
+        /* bottom, image */
+        url(img/escheresque/escheresque_@2X.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4
+    {
+        margin:10px;
+    }
+
+    p1{
+        font-size: 12px;
+    }
+    p2{
+        font-size:14px;
+    }
+    .adoptcat {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-wrap: nowrap;
+    }
+    .adoptcat:last-child{
+        display: none;
+    }
+    #helpus{
+        padding-top: 80px;
+    }
+    #aboutus{
+        display:block;
+        margin-top:60vh;
+    }
+    #pomocmat{
+        background-image: url(img/escheresque/escheresque.png);
+        margin: -3%;
+    }
+    
+    #whatwedo{
+        margin-top: -52px;
+    }
+    
+    footer{
+    }
+    .partoffooter{
+        width: 100%;
+        padding-top:-50px;
+        padding-bottom:-50px;
+        height: 50vh;
+        background-color: #088e62;
+    }
+    #weandfriends{
+        display: none;
+    }
+    #copy{
+        margin: 0;
+        height: 20vh;
+            background-image: linear-gradient(#088e62, #000);
+
+    }
+}
